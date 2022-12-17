@@ -56,18 +56,35 @@ article{
   background-color: #999966;
   font-style:  italic;
 }
+.list:nth-child(odd) {
+  color: white;
+}
+nav {
+  display: flex;
+}
 .navbuttons {
-  background-color: red;
-  padding: 1px;
+  background-color: #333333;
+  padding: 0.5rem;
   border-style: solid;
-  border-color: yellow;
+  border-color: #ffffff;
   font-weight: bold;
-  margin-bottom: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+.navbuttons:hover,
+.navbuttons:focus {
+  background-color: #fff;
+  color: #333;
 }
 .projectlinks {
   padding: 4px;
   border: 1px solid black;
   background: lightblue;
+}
+.projectlinks:visited {
+  background: #7a0ca6;
+  color: #ffffff;
 }
 footer {
   color: aqua;
@@ -84,4 +101,7 @@ footer {
   padding: .5rem;
   height: auto;
   width: 30rem;
+}
+.flex-container article:nth-child(odd) {
+  background-color: grey;
 }
